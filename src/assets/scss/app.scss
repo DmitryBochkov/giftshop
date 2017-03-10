@@ -49,3 +49,7 @@
 
 @include motion-ui-transitions;
 @include motion-ui-animations;
+
+//custom components
+@import "base.scss";
+@import "components/nav";
