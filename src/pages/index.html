@@ -44,32 +44,36 @@ title: Page Title
   <div class="container">
     <section class="promo-left">
       <form class="promo__product-search">
-        <input type="search" name="product-search" placeholder="Search your product here ( e.g.: Silver diamond ring )">
-        <button type="submit">Search</button>
+        <div class="input-group">
+          <input class="input-group-field" type="search" name="product-search" placeholder="Search your product here ( e.g.: Silver diamond ring )">
+          <div class="input-group-button">
+            <input type="submit" class="button" value="Search">
+          </div>
+        </div>
       </form>
       <div class="promo__product promo__product--medium">
         <a href="#0">
           <img src="assets/img/promo-product-medium.jpg" alt="Crafts">
-          <div class="product-buttons">
-            <div class="product-buttons__title">Crafts</div>
-            <div class="product-buttons__wishlist"><a href="#0"></a></div>
-            <div class="product-buttons__cart"><a href="#0"></a></div>
-            <div class="product-buttons__price">
-              <span class="product-buttons__price-currency">$</span>
-              <span class="product-buttons__price-ammount">99.00</span>
-            </div>
-          </div>
         </a>
+        <ul class="product-buttons">
+          <li class="product-buttons__title"><a href="#0">Crafts</a></li>
+          <li class="product-buttons__wishlist"><a href="#0"></a></li>
+          <li class="product-buttons__cart"><a href="#0"></a></li>
+          <li class="product-buttons__price">
+            <span class="product-buttons__price-currency">$</span>
+            <span class="product-buttons__price-ammount">99.<sup>00</sup></span>
+          </li>
+        </ul>
       </div>
     </section>
     <section class="promo-right">
       <div class="promo__section promo__section--medium">
         <a href="#0">
           <img src="assets/img/promo-section-medium.jpg" alt="Jewelry">
-          <div class="promo__content">
-            <h3>Jewelry</h3>
-          </div>
         </a>
+        <div class="promo__content rotated-text">
+          <h3 class="rotated-text__inner">Jewelry</h3>
+        </div>
       </div>
     </section>
   </div>
