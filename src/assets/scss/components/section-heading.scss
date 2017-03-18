@@ -1,0 +1,40 @@
+.section-heading-wrapper {
+  @include grid-column(12);
+}
+.section-heading {
+  @include grid-row();
+  position: relative;
+  border-bottom: 1px solid $gray;
+  margin-top: 25px;
+  margin-bottom: 28px;
+  z-index: 1;
+}
+.section-title {
+  @include grid-column(8);
+  @include breakpoint(medium) {
+    @include grid-column(10);
+  };
+  min-height: 79px;
+  line-height: 79px;
+  h3 {
+    position: relative;
+    display: inline-block;
+    vertical-align: bottom;
+    padding: 0;
+    margin: 0;
+    margin-bottom: -1px;
+    border-bottom: 1px solid $pale-red;
+    z-index: 5;
+    color: $dark-blue;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and #{breakpoint(medium)} {
+  .section-title {
+    h3 {
+      font-size: 1.875rem;
+    }
+  }
+
+}

@@ -1,0 +1,30 @@
+.slider-buttons {
+  @include grid-column(4);
+  @include breakpoint(medium) {
+    @include grid-column(2);
+  };
+  padding-right: 0 !important;
+
+  .prev,
+  .next {
+    float: right;
+    width: 50%;
+    max-width: 70px;
+    height: 79px;
+    background-color: #3c3c3c;
+    cursor: pointer;
+  }
+  .prev:hover,
+  .next:hover {
+    background-color: $primary-color;
+  }
+}
+
+.featured-products {
+  .slider-buttons {
+    .prev:hover,
+    .next:hover {
+      background-color: $pale-red;
+    }
+  }
+}
