@@ -1,0 +1,91 @@
+.about {
+  .section-title {
+    @include grid-column(12);
+  }
+  .button-area {
+    @include grid-column-row(20px);
+    @include breakpoint(medium) {
+      @include grid-column-row(30px);
+      padding-top: 20px;
+    };
+  }
+  .button--register {
+    @include button-expand(true);
+    @include breakpoint(medium) {
+      @include button-expand(false);
+      display: block;
+      width: 55.3846%;
+      margin: 0 auto;
+      padding: 0;
+      height: 61px;
+      font-size: 28px;
+      line-height: 61px;
+    };
+
+  }
+}
+.about__content {
+  @include grid-column(12);
+}
+.about__options {
+  @include grid-row();
+}
+.about__options-column {
+  @include grid-column(12);
+  @include breakpoint(medium) {
+    @include grid-column(4);
+  };
+}
+.about__options-item {
+  height: 232px;
+  color: $white;
+  display: table;
+  width: 100%;
+  font-size: 30px;
+  line-height: 30px;
+  margin-bottom: 10px;
+  a {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 50%;
+    padding-right: 5%;
+    color: $white;
+  }
+  a:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+}
+.about__options-item--products {
+  background-color: $secondary-color;
+}
+.about__options-item--register {
+  background-color: $primary-color;
+}
+.about__options-item--checkout {
+  background-color: $pale-red;
+}
+
+
+@media screen and #{breakpoint(medium)} {
+  .about__content {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+  }
+  .about__options-item {
+    font-size: 20px;
+    line-height: 20px;
+    a {
+      padding-left: 45%;
+    }
+
+  }
+}
+@media screen and #{breakpoint(large)} {
+  .about__options-item {
+    font-size: 30px;
+    line-height: 30px;
+    a {
+      padding-left: 50%;
+    }
+  }
+}
