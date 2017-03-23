@@ -50,8 +50,11 @@
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
+// sprites
+@import "sprite";
+
 //custom components
-@import "base.scss";
+@import "base";
 @import "components/nav";
 @import "components/header";
 @import "components/new-products";

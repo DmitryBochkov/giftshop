@@ -13,11 +13,24 @@
     height: 79px;
     background-color: #3c3c3c;
     cursor: pointer;
+    span {
+      border: solid $white;
+      border-width: 0 3px 3px 0;
+      display: inline-block;
+      padding: 8px;
+    }
+    .prev-arrow {
+      transform: rotate(-45deg);
+    }
+    .next-arrow {
+      transform: rotate(135deg);
+    }
   }
   .prev:hover,
   .next:hover {
     background-color: $primary-color;
   }
+
 }
 
 .featured-products {

@@ -39,18 +39,43 @@
 }
 .about__options-item {
   height: 232px;
+  position: relative;
   color: $white;
   display: table;
   width: 100%;
   font-size: 30px;
   line-height: 30px;
   margin-bottom: 10px;
+  &:before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 50%;
+    margin-left: 8.5%;
+  }
   a {
     display: table-cell;
-    vertical-align: middle;
-    padding-left: 50%;
-    padding-right: 5%;
+    vertical-align: top;
+    text-align: center;
+    padding-top: 2%;
     color: $white;
+    @include breakpoint(400px) {
+      vertical-align: middle;
+      padding-left: 55%;
+      padding-right: 5%;
+      text-align: left;
+    };
+    @include breakpoint(medium) {
+      vertical-align: top;
+      padding: 5%;
+      text-align: center;
+    };
+    @include breakpoint(large) {
+      vertical-align: middle;
+      padding-left: 55%;
+      padding-right: 5%;
+      text-align: left;
+    };
   }
   a:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -58,12 +83,75 @@
 }
 .about__options-item--products {
   background-color: $secondary-color;
+  &:before {
+    @include sprite($about-options-img-1);
+    margin-top: -75px;
+    margin-left: -71px;
+    left: 50%;
+    @include breakpoint(400px) {
+      margin-top: -91px;
+      margin-left: initial;
+      left: 8.5%;
+    };
+    @include breakpoint(medium) {
+      margin-top: -75px;
+      margin-left: -71px;
+      left: 50%;
+    };
+    @include breakpoint(large) {
+      margin-top: -91px;
+      margin-left: initial;
+      left: 8.5%;
+    };
+  }
 }
 .about__options-item--register {
   background-color: $primary-color;
+  &:before {
+    @include sprite($about-options-img-2);
+    margin-top: -75px;
+    margin-left: -71px;
+    left: 50%;
+    @include breakpoint(400px) {
+      margin-top: -91px;
+      margin-left: initial;
+      left: 8.5%;
+    };
+    @include breakpoint(medium) {
+      margin-top: -75px;
+      margin-left: -71px;
+      left: 50%;
+    };
+    @include breakpoint(large) {
+      margin-top: -91px;
+      margin-left: initial;
+      left: 8.5%;
+    };
+  }
 }
 .about__options-item--checkout {
   background-color: $pale-red;
+  &:before {
+    @include sprite($about-options-img-3);
+    margin-top: -75px;
+    margin-left: -71px;
+    left: 50%;
+    @include breakpoint(400px) {
+      margin-top: -91px;
+      margin-left: initial;
+      left: 8.5%;
+    };
+    @include breakpoint(medium) {
+      margin-top: -75px;
+      margin-left: -71px;
+      left: 50%;
+    };
+    @include breakpoint(large) {
+      margin-top: -91px;
+      margin-left: initial;
+      left: 8.5%;
+    };
+  }
 }
 
 
@@ -75,18 +163,11 @@
   .about__options-item {
     font-size: 20px;
     line-height: 20px;
-    a {
-      padding-left: 45%;
-    }
-
   }
 }
 @media screen and #{breakpoint(large)} {
   .about__options-item {
     font-size: 30px;
     line-height: 30px;
-    a {
-      padding-left: 50%;
-    }
   }
 }

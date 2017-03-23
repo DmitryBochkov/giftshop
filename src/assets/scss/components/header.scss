@@ -103,15 +103,37 @@ header {
       display: block;
       width: 53px;
       height: 55px;
+      position: relative;
       background-color: $dark-blue;
+      &:after {
+        position: absolute;
+        content: '';
+        display: block;
+        @include sprite($whishlist-icon);
+        top: 50%;
+        margin-top: -12px;
+        left: 50%;
+        margin-left: -11px;
+      }
     }
   }
   .product-buttons__cart {
     a {
       width: 53px;
       height: 55px;
+      position: relative;
       background-color: $pale-red;
       display: block;
+      &:after {
+        position: absolute;
+        content: '';
+        display: block;
+        @include sprite($cart-icon);
+        top: 50%;
+        margin-top: -11px;
+        left: 50%;
+        margin-left: -14px;
+      }
     }
   }
   .product-buttons__price {
