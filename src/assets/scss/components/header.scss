@@ -166,7 +166,7 @@ header {
   }
   .input-group-field {
     padding-left: 10px;
-    padding-right: 70px;
+    padding-right: 20px;
     height: 71px;
     background-color: $white;
     box-shadow: 1px 1.7px 7px rgba(0, 0, 0, 0.19);
@@ -181,6 +181,20 @@ header {
     background: transparent;
     border: none;
     outline: none;
+    &:before {
+      content: '';
+      position: absolute;
+      display: block;
+      @include sprite($search-icon);
+      right: 0;
+      top: 7px;
+    }
+  }
+  .input-group-button {
+    display: none;
+    @include breakpoint(large) {
+      display: table-cell;
+    };
   }
 }
 .promo__product--medium {

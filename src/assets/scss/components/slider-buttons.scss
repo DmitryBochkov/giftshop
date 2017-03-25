@@ -20,10 +20,10 @@
       padding: 8px;
     }
     .prev-arrow {
-      transform: rotate(-45deg);
+      transform: rotate(135deg);
     }
     .next-arrow {
-      transform: rotate(135deg);
+      transform: rotate(-45deg);
     }
   }
   .prev:hover,

@@ -31,8 +31,8 @@ title: Page Title
         </a>
         <ul class="product-buttons">
           <li class="product-buttons__title"><a href="#0">Baby Shop</a></li>
-          <li class="product-buttons__wishlist"><a href="#0"></a></li>
-          <li class="product-buttons__cart"><a href="#0"></a></li>
+          <li data-tooltip aria-haspopup="true" class="product-buttons__wishlist has-tip top" data-disable-hover="false" tabindex="1" title="add to wishlist"><a href="#0"></a></li>
+          <li data-tooltip aria-haspopup="true" class="product-buttons__cart has-tip top" data-disable-hover="false" tabindex="2" title="add to cart"><a href="#0"></a></li>
           <li class="product-buttons__price">
             <span class="product-buttons__price-currency">$</span>
             <span class="product-buttons__price-ammount">99.<sup>00</sup></span>
@@ -47,7 +47,7 @@ title: Page Title
         <div class="input-group">
           <input class="input-group-field" type="search" name="product-search" placeholder="Search your product here ( e.g.: Silver diamond ring )">
           <div class="input-group-button">
-            <input type="submit" class="button" value="Search">
+            <button class="button button--promo">Search</button>
           </div>
         </div>
       </form>
@@ -57,8 +57,8 @@ title: Page Title
         </a>
         <ul class="product-buttons">
           <li class="product-buttons__title"><a href="#0">Crafts</a></li>
-          <li class="product-buttons__wishlist"><a href="#0"></a></li>
-          <li class="product-buttons__cart"><a href="#0"></a></li>
+          <li data-tooltip aria-haspopup="true" class="product-buttons__wishlist has-tip top" data-disable-hover="false" tabindex="1" title="add to wishlist"><a href="#0"></a></li>
+          <li data-tooltip aria-haspopup="true" class="product-buttons__cart has-tip top" data-disable-hover="false" tabindex="2" title="add to cart"><a href="#0"></a></li>
           <li class="product-buttons__price">
             <span class="product-buttons__price-currency">$</span>
             <span class="product-buttons__price-ammount">99.<sup>00</sup></span>
@@ -91,24 +91,40 @@ title: Page Title
           <h3>New Products</h3>
         </div>
         <div class="slider-buttons">
-          <button class="prev"><span class="prev-arrow"></span></button>
           <button class="next"><span class="next-arrow"></span></button>
+          <button class="prev"><span class="prev-arrow"></span></button>
         </div>
       </div>
     </div>
   </div>
-  <div class="container">
+  <div class="container new-products__slider">
     <article class="new-products__item">
       <div class="new-products__image-container">
         <img src="assets/img/new-products-img-1.jpg" alt="">
         <div class="new-products__image-overlay">
           <ul class="product-buttons">
             <li class="product-buttons__title"><a href="#0">Women Shop</a></li>
-            <li class="product-buttons__wishlist"><a href="#0"></a></li>
-            <li class="product-buttons__cart"><a href="#0"></a></li>
+            <li data-tooltip aria-haspopup="true" class="product-buttons__wishlist has-tip top" data-disable-hover="false" tabindex="1" title="add to wishlist"><a href="#0"></a></li>
+            <li data-tooltip aria-haspopup="true" class="product-buttons__cart has-tip top" data-disable-hover="false" tabindex="2" title="add to cart"><a href="#0"></a></li>
             <li class="product-buttons__price">
               <span class="product-buttons__price-currency">$</span>
               <span class="product-buttons__price-ammount">199.<sup>00</sup></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </article>
+    <article class="new-products__item">
+      <div class="new-products__image-container">
+        <img src="assets/img/new-products-img-3.jpg" alt="">
+        <div class="new-products__image-overlay">
+          <ul class="product-buttons">
+            <li class="product-buttons__title"><a href="#0">Men Shop</a></li>
+            <li data-tooltip aria-haspopup="true" class="product-buttons__wishlist has-tip top" data-disable-hover="false" tabindex="1" title="add to wishlist"><a href="#0"></a></li>
+            <li data-tooltip aria-haspopup="true" class="product-buttons__cart has-tip top" data-disable-hover="false" tabindex="2" title="add to cart"><a href="#0"></a></li>
+            <li class="product-buttons__price">
+              <span class="product-buttons__price-currency">$</span>
+              <span class="product-buttons__price-ammount">99.<sup>00</sup></span>
             </li>
           </ul>
         </div>
@@ -120,8 +136,8 @@ title: Page Title
         <div class="new-products__image-overlay">
           <ul class="product-buttons">
             <li class="product-buttons__title"><a href="#0">Baby Shop</a></li>
-            <li class="product-buttons__wishlist"><a href="#0"></a></li>
-            <li class="product-buttons__cart"><a href="#0"></a></li>
+            <li data-tooltip aria-haspopup="true" class="product-buttons__wishlist has-tip top" data-disable-hover="false" tabindex="1" title="add to wishlist"><a href="#0"></a></li>
+            <li data-tooltip aria-haspopup="true" class="product-buttons__cart has-tip top" data-disable-hover="false" tabindex="2" title="add to cart"><a href="#0"></a></li>
             <li class="product-buttons__price">
               <span class="product-buttons__price-currency">$</span>
               <span class="product-buttons__price-ammount">99.<sup>00</sup></span>
@@ -136,8 +152,8 @@ title: Page Title
         <div class="new-products__image-overlay">
           <ul class="product-buttons">
             <li class="product-buttons__title"><a href="#0">Men Shop</a></li>
-            <li class="product-buttons__wishlist"><a href="#0"></a></li>
-            <li class="product-buttons__cart"><a href="#0"></a></li>
+            <li data-tooltip aria-haspopup="true" class="product-buttons__wishlist has-tip top" data-disable-hover="false" tabindex="1" title="add to wishlist"><a href="#0"></a></li>
+            <li data-tooltip aria-haspopup="true" class="product-buttons__cart has-tip top" data-disable-hover="false" tabindex="2" title="add to cart"><a href="#0"></a></li>
             <li class="product-buttons__price">
               <span class="product-buttons__price-currency">$</span>
               <span class="product-buttons__price-ammount">299.<sup>00</sup></span>
@@ -156,13 +172,13 @@ title: Page Title
           <h3>Featured Products</h3>
         </div>
         <div class="slider-buttons">
-          <button class="prev"><span class="prev-arrow"></span></button>
           <button class="next"><span class="next-arrow"></span></button>
+          <button class="prev"><span class="prev-arrow"></span></button>
         </div>
       </div>
     </div>
   </div>
-  <div class="container">
+  <div class="container featured-products__slider">
     <article class="featured-products__item">
       <div class="card card--featured-products" href="#0">
         <span class="featured-products__info">20% off</span>
@@ -172,8 +188,8 @@ title: Page Title
           <p>Short Description here</p>
           <ul class="product-buttons product-buttons--featured-products">
             <li class="product-buttons__settings"><a href="#0"></a></li>
-            <li class="product-buttons__wishlist"><a href="#0"></a></li>
-            <li class="product-buttons__cart"><a href="#0"></a></li>
+            <li data-tooltip aria-haspopup="true" class="product-buttons__wishlist has-tip top" data-disable-hover="false" tabindex="1" title="add to wishlist"><a href="#0"></a></li>
+            <li data-tooltip aria-haspopup="true" class="product-buttons__cart has-tip top" data-disable-hover="false" tabindex="2" title="add to cart"><a href="#0"></a></li>
             <li class="product-buttons__price">
               <span class="product-buttons__price-currency">$</span>
               <span class="product-buttons__price-ammount">99.<sup>00</sup></span>
@@ -190,8 +206,8 @@ title: Page Title
           <p>Short Description here</p>
           <ul class="product-buttons product-buttons--featured-products">
             <li class="product-buttons__settings"><a href="#0"></a></li>
-            <li class="product-buttons__wishlist"><a href="#0"></a></li>
-            <li class="product-buttons__cart"><a href="#0"></a></li>
+            <li data-tooltip aria-haspopup="true" class="product-buttons__wishlist has-tip top" data-disable-hover="false" tabindex="1" title="add to wishlist"><a href="#0"></a></li>
+            <li data-tooltip aria-haspopup="true" class="product-buttons__cart has-tip top" data-disable-hover="false" tabindex="2" title="add to cart"><a href="#0"></a></li>
             <li class="product-buttons__price">
               <span class="product-buttons__price-currency">$</span>
               <span class="product-buttons__price-ammount">99.<sup>00</sup></span>
@@ -209,8 +225,8 @@ title: Page Title
           <p>Short Description here</p>
           <ul class="product-buttons product-buttons--featured-products">
             <li class="product-buttons__settings"><a href="#0"></a></li>
-            <li class="product-buttons__wishlist"><a href="#0"></a></li>
-            <li class="product-buttons__cart"><a href="#0"></a></li>
+            <li data-tooltip aria-haspopup="true" class="product-buttons__wishlist has-tip top" data-disable-hover="false" tabindex="1" title="add to wishlist"><a href="#0"></a></li>
+            <li data-tooltip aria-haspopup="true" class="product-buttons__cart has-tip top" data-disable-hover="false" tabindex="2" title="add to cart"><a href="#0"></a></li>
             <li class="product-buttons__price">
               <span class="product-buttons__price-currency">$</span>
               <span class="product-buttons__price-ammount">99.<sup>00</sup></span>
@@ -227,8 +243,26 @@ title: Page Title
           <p>Short Description here</p>
           <ul class="product-buttons product-buttons--featured-products">
             <li class="product-buttons__settings"><a href="#0"></a></li>
-            <li class="product-buttons__wishlist"><a href="#0"></a></li>
-            <li class="product-buttons__cart"><a href="#0"></a></li>
+            <li data-tooltip aria-haspopup="true" class="product-buttons__wishlist has-tip top" data-disable-hover="false" tabindex="1" title="add to wishlist"><a href="#0"></a></li>
+            <li data-tooltip aria-haspopup="true" class="product-buttons__cart has-tip top" data-disable-hover="false" tabindex="2" title="add to cart"><a href="#0"></a></li>
+            <li class="product-buttons__price">
+              <span class="product-buttons__price-currency">$</span>
+              <span class="product-buttons__price-ammount">99.<sup>00</sup></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </article>
+    <article class="featured-products__item">
+      <div class="card card--featured-products" href="#0">
+        <img src="assets/img/featured-products-img-2.jpg" alt="">
+        <div class="card-section">
+          <h3>Product Title here</h3>
+          <p>Short Description here</p>
+          <ul class="product-buttons product-buttons--featured-products">
+            <li class="product-buttons__settings"><a href="#0"></a></li>
+            <li data-tooltip aria-haspopup="true" class="product-buttons__wishlist has-tip top" data-disable-hover="false" tabindex="1" title="add to wishlist"><a href="#0"></a></li>
+            <li data-tooltip aria-haspopup="true" class="product-buttons__cart has-tip top" data-disable-hover="false" tabindex="2" title="add to cart"><a href="#0"></a></li>
             <li class="product-buttons__price">
               <span class="product-buttons__price-currency">$</span>
               <span class="product-buttons__price-ammount">99.<sup>00</sup></span>
