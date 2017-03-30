@@ -5,8 +5,8 @@
   @include grid-row();
   position: relative;
   border-bottom: 1px solid $gray;
-  margin-top: 25px;
-  margin-bottom: 28px;
+  margin-top: 20px;
+  margin-bottom: 25px;
   z-index: 1;
 }
 .section-title {
@@ -27,6 +27,14 @@
     z-index: 5;
     color: $dark-blue;
     font-size: 1.5rem;
+    @include breakpoint(medium) {
+      margin-left: 15px;      
+    }
+  }
+}
+.about {
+  .section-heading {
+    margin-top: 0;
   }
 }
 

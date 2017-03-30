@@ -1,6 +1,6 @@
 $(document).foundation();
 $(document).ready(function() {
-  $('nav.no-js').removeClass('no-js');
+  $('.no-js').removeClass('no-js');
 
   //new-products slider
   $('.new-products__slider').slick({
@@ -76,5 +76,16 @@ $(document).ready(function() {
     $('.featured-products__slider').slick('slickNext');
   });
 
+  // slide in animation
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
 
+      var winTop = $(window).scrollTop();
+      console.log(winTop);
+      if (pos < winTop + 600) {
+        $(this).addClass("slide");
+      }
+    });
+  });
 });

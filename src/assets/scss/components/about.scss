@@ -27,6 +27,7 @@
 }
 .about__content {
   @include grid-column(12);
+  margin-bottom: 20px;
 }
 .about__options {
   @include grid-row();

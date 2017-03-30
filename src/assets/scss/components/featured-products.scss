@@ -1,3 +1,6 @@
+.no-js .featured-products__item:nth-child(n+5) {
+  display: none;
+}
 .featured-products__item {
   @include grid-column(12);
   @include breakpoint(460px) {
@@ -11,6 +14,9 @@
   };
 }
 .card--featured-products {
+  @include breakpoint(medium) {
+    margin-bottom: 0;
+  };
   position: relative;
   border: 1px solid #ddd;
   img {
@@ -30,12 +36,14 @@
       color: $secondary-color;
       font-size: 1.125rem;
       margin: 0;
+      line-height: 1;
     }
     p {
       padding: 0 15px;
       margin-bottom: 10px;
       color: $pale-red;
       font-size: 0.8125rem;
+      line-height: 1;
     }
   }
 }

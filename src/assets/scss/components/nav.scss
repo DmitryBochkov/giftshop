@@ -127,7 +127,7 @@ nav.all {
     }
     .top-bar-right:last-of-type {
       width: 100%;
-      margin-top: 10px;
+      margin-top: 14px;
       background: $primary-color !important;
       color: $white;
     }
@@ -181,8 +181,17 @@ nav.all {
       color: $white;
       .shop-menu__item {
         > a {
-          padding: 28px 25px;
+          padding: 28px 10px;
           color: $white;
+          @include breakpoint(760) {
+            padding: 28px 15px;
+          };
+          @include breakpoint(900) {
+            padding: 28px 20px;
+          };
+          @include breakpoint(large) {
+            padding: 28px 25px;
+          };
           &:hover {
             background-color: $white;
             color: $light-red;
@@ -264,6 +273,13 @@ nav.all {
 
 @media screen and #{breakpoint(large)} {
   nav.all {
+    .user-menu {
+      .user-menu__item {
+        a {
+          width: 116px;
+        }
+      }
+    }
     .user-menu__item:nth-child(3),
     .user-menu__item:nth-child(4) {
       a {
@@ -286,6 +302,17 @@ nav.all {
           left: 5px;
 
         }
+      }
+    }
+    .site-menu {
+      .site-menu__item {
+        letter-spacing: 2px;
+      }
+    }
+    .shop-menu .shop-menu__item {
+      letter-spacing: 2px;
+      ul {
+        letter-spacing: normal;
       }
     }
   }
