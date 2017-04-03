@@ -3,6 +3,12 @@ nav.no-js {
   .top-bar ul {
     background-color: $light-gray;
   }
+  .top-bar .shop-menu,
+  .top-bar ul.shop-menu {
+    background-color: $primary-color;
+    color: $white;
+  }
+
   .menu-icon {
     display: none;
   }
@@ -19,7 +25,6 @@ nav.no-js {
     font-size: 0;
     list-style: none;
     display: block;
-    border-bottom: 1px solid #434343;
     .site-menu__item,
     .user-menu__item,
     .shop-menu__item {
@@ -44,6 +49,11 @@ nav.no-js {
   }
 } //nav.no-js
 nav.all {
+  .top-bar .shop-menu,
+  .top-bar ul.shop-menu {
+    background-color: $primary-color;
+    color: $white;
+  }
   .top-bar-title {
     width: 100%;
     padding: 10px;
@@ -64,7 +74,6 @@ nav.all {
     font-size: 0;
     list-style: none;
     display: block;
-    border-bottom: 1px solid $secondary-color;
     .site-menu__item,
     .user-menu__item,
     .shop-menu__item {
@@ -85,6 +94,37 @@ nav.all {
     }
     .user-menu__item {
       width: 50%;
+      background-color: $primary-color;
+      color: $white;
+      a {
+        color: inherit;
+      }
+      a:hover {
+        color: inherit;
+        background-color: $dark-blue;
+      }
+    }
+    .user-menu__item:nth-child(n+3) {
+      background-color: $pale-red;
+      a:hover {
+        background-color: darken($pale-red, 5);
+      }
+    }
+    .shop-menu__item {
+      width: 33.3333%;
+      display: inline-block;
+      vertical-align: top;
+      font-size: 0.9rem;
+      text-align: center;
+      a {
+        display: block;
+        padding: 10px;
+        background-color: $primary-color;
+        color: $white;
+        &:hover {
+          color: $secondary-color;
+        }
+      }
     }
   }
   .dropdown.menu > li.is-dropdown-submenu-parent > a::after {
@@ -206,7 +246,6 @@ nav.all {
         width: 263px;
         padding: 15px 20px 20px;
         text-align: left;
-        // border-bottom: 1px solid $medium-gray;
         &:after {
           content: '';
           position: absolute;
@@ -257,6 +296,7 @@ nav.all {
         }
         a {
           color: $light-red;
+          background-color: $white;
           padding: 5px;
           display: block;
         }
