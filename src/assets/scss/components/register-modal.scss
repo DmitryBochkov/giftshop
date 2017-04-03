@@ -1,0 +1,22 @@
+.register-form {
+  fieldset {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  legend {
+    margin-left: 1rem;
+  }
+  .register-form__options {
+    label {
+      white-space: nowrap;
+    }
+  }
+  .button {
+    float: right;
+    color: $white;
+    font-weight: bold;
+  }
+  .button:hover {
+    color: $white;
+  }
+}

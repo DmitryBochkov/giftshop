@@ -1,0 +1,79 @@
+<div class="reveal register-modal" id="registerModal" data-reveal>
+  <h3 class="register-modal__tite">Registration Form</h3>
+  <form class="register-form">
+    <fieldset class="fieldset">
+      <legend>Personal data (required)</legend>
+      <div class="row">
+        <div class="small-4 medium-3 columns">
+          <label for="name" class="text-right middle">Name</label>
+        </div>
+        <div class="small-8 medium-9 columns">
+          <input type="text" id="name" placeholder="Enter your name" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="small-4 medium-3 columns">
+          <label for="email" class="text-right middle">Email</label>
+        </div>
+        <div class="small-8 medium-9 columns">
+          <input type="email" id="email" placeholder="Enter your email" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="small-4 medium-3 columns">
+          <label for="password" class="text-right middle">Password</label>
+        </div>
+        <div class="small-8 medium-9 columns">
+          <input type="password" id="password" placeholder="Enter your password" aria-describedby="passwordHelpText" required>
+          <p class="help-text" id="passwordHelpText">Your password must have at least 7 characters.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="small-4 medium-3 columns">
+          <label for="repeat-password" class="text-right middle">Repeat password</label>
+        </div>
+        <div class="small-8 medium-9 columns">
+          <input type="password" id="repeat-password" placeholder="Repeat your password" aria-describedby="repeatPasswordHelpText" required>
+          <p class="help-text" id="repeatPasswordHelpText">Your passwords must match.</p>
+        </div>
+      </div>
+    </fieldset>
+    <fieldset class="fieldset register-form__options">
+      <legend>Check your preferences (optional)</legend>
+      <div class="row">
+        <div class="small-6 medium-3 columns">
+          <label><input name="home" type="checkbox">Home &amp; Living</label>
+        </div>
+        <div class="small-6 medium-3 columns">
+          <label><input name="art" type="checkbox">Art</label>
+        </div>
+        <div class="small-6 medium-3 columns">
+          <label><input name="jewelry" type="checkbox">Jewelry</label>
+        </div>
+        <div class="small-6 medium-3 columns">
+          <label><input name="vintage" type="checkbox">Vintage</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="small-6 medium-3 columns">
+          <label><input name="women-wear" type="checkbox">Women Wear</label>
+        </div>
+        <div class="small-6 medium-3 columns">
+          <label><input name="men-wear" type="checkbox">Men Wear</label>
+        </div>
+        <div class="small-6 medium-3 columns">
+          <label><input name="baby-shop" type="checkbox">Baby Shop</label>
+        </div>
+        <div class="small-6 medium-3 columns">
+          <label><input name="weddings" type="checkbox">Weddings</label>
+        </div>
+      </div>
+    </fieldset>
+    <div class="row">
+      <button type="button" class="button primary">Submit</button>
+    </div>
+  </form>
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
