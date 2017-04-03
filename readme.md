@@ -6,7 +6,7 @@ Features:
 - fully responsive;
 - pixel-perfect PSD to HTML;
 - multiple sliders;
-- popup registration form;
+- popup registration form (About section);
 - drop-down menu;
 - tooltips;
-- slide-in animation for About section;
+- slide-in animation for About section.
